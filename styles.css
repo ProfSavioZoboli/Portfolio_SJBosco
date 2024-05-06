@@ -23,8 +23,22 @@ header img{
 
 header nav{
     width:50%;
+    height:100%;
     display:flex;
     justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+
+header a{
+    padding:0;
+}
+
+a:hover{
+    padding-bottom:5px;
+    transition-duration: 0.2s;
+    cursor:pointer;
+    color:#EEE;
 }
 
 header button{
@@ -35,6 +49,13 @@ header button{
     font-family: candara;
     border-radius: 5px;
     box-shadow:0 0 0.8em #8A2BE2;
+    transition-duration: 0.2s;
+}
+
+header button:hover{
+    padding:15px;
+    transition-duration: 0.2s;
+    box-shadow: 0 0 1em #8A2BE2;
 }
 
 .apresentacao{
@@ -165,3 +186,90 @@ header button{
     background-image:url('./assets/img/foto_sobre.jpg');
     background-size: cover;
 }
+
+/* Formulário de contato */
+
+.contato{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links{
+    width:30%;
+    height:85%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:2em;
+    padding-left:30px;
+}
+
+.contato a{
+    padding:10px;
+    width:120px;
+    background:#1fac9b;
+    color:white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+.contato a:hover{
+    background-color: #e5722f;
+    transition-duration: 0.5s;
+    transform: rotate(15deg);
+}
+
+.contato section{
+    width:60%;
+    height:85%;
+}
+
+.contato header{
+    width:100%;
+    height:20%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.contato h1{
+    font-size: 2em;
+    color:#e5722f;
+    padding:0;
+    margin:0;
+    font-family: candara;
+}
+
+.contato p{
+    color:#EEE;
+    font-family: candara;
+}
+
+.contato form{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.contato input{
+    width:55%;
+    border:1px #1fac9b solid;
+    background-color: transparent;
+    color:white;
+    height:30px;
+    padding:5px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color:#e5722f;
+}
+
